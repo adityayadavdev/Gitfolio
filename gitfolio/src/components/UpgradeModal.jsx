@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../hooks/useAuth';
 import usePremium from '../hooks/usePremium';
@@ -70,7 +71,7 @@ const UpgradeModal = () => {
     }
   };
 
-  return (
+  return createPortal(
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0 }}
@@ -100,7 +101,7 @@ const UpgradeModal = () => {
               {FEATURES.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3 text-zinc-400">
                   <span className="flex-shrink-0 w-5 h-5 rounded-full bg-green-500/20 text-green-500 flex items-center justify-center text-xs">
-                    ✓
+                      ✓
                   </span>
                   <span className="text-sm">{feature}</span>
                 </div>
@@ -146,7 +147,8 @@ const UpgradeModal = () => {
           </button>
         </motion.div>
       </motion.div>
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 };
 
