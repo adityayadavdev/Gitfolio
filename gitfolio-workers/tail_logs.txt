@@ -1,0 +1,1895 @@
+{
+    "wallTime": 0,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "06f02955-5111-406e-8c77-65364cce3ad4"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779440704103,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/license/by-order?order_id=fake123",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffaa830980a4467",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "6fzznp7ryynbLeaUTp9+eV6LMD/7MskNHDExKlsazJE=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "57807b1870e1110e5291cda5bac8a39a408c8c1245acc84c8de02d062ee53d0df6d28a72b108eae8a79d74f4de507c68",
+                    "serverHandshake": "9998bf1beb5656181d840ebcf7d0ac5d79d7f1dc49a8204fdacf5638a326310c66c6064f14b564a44a21a4213ffcf547",
+                    "clientFinished": "84a3c9dae3d4dd66fbeaa15911a502701f68d2cf6cbbaa192bf4e02fd79e069d4417512d8711e3b93b00a4f6a69a146a",
+                    "serverFinished": "1aa5cad05762b5c059cfa15d461cdd28666fb13a292e4d5a75556c340a1a64d0f6aa75957fdb04df53489d42cf92a51e"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 763636
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 1,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "49dcb271-353d-4266-a3c1-d01f355370f1"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779440847240,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/premium/status",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffaabaf3e49002d",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "OhptpTiOaLb8Qya7+jKoKig9GEq2d4/6BuTy64ZaDdQ=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "5e65e8e1016637385034296f90a62bda46f74b7f21a6e1d3f1b91bf4778ef663100110b850cdf48d5d3d5a98c4d92ccb",
+                    "serverHandshake": "0ba087190e8ade970f3a1ec31633250444fdc083cc61293bb7161e051ca72e9fde82a233f49d2796adae8dbfcd7a104b",
+                    "clientFinished": "5a1809eee26374a355ef2a87f9775ac4d85019a70edf5bcc35f720b8b1a65dbbc1e66b0e1137e14077941d3e31f9bf01",
+                    "serverFinished": "e0db2625022e3623244408ca7da3bc3672231c9f305b2ec1309a04ce909c191b26c575086ed79bb51eeecaae725143d9"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 790697
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 1,
+    "cpuTime": 1,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "49dcb271-353d-4266-a3c1-d01f355370f1"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779440847351,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/ai",
+            "method": "POST",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffaabafe9c9146a",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "content-length": "113",
+                "content-type": "application/json",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 7,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "X1Jff+tMIy7/eooVtt9YIBWSmKLnTy+l27/AkqX8sr0=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "eeabb52dc7a7e01c0cf818e72ecc2865699e768b23dd32ba548b65e18ab00aa055d3216db5f70437e166e5851d9e9f68",
+                    "serverHandshake": "477332c11873be9666d3419c440fed605e8d3d8663ecab5b5feea03f5e5f27d40d76cfd867195fdd5dcca0c89cc8bcf1",
+                    "clientFinished": "91d1aec717f1102968dbc4f6feef75b6309807a8388680bbd3a8b9588e0967068808b6ea750c7f5a70b70051bbba5f61",
+                    "serverFinished": "f18347f1687a8111eb499a1079eb990cdc96f28452f1b3d497fe80b006fcb15ed8a4f1b2af584fae005b202d12073f74"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 356643
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 0,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "49dcb271-353d-4266-a3c1-d01f355370f1"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779440847482,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/license/by-order?order_id=fake123",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffaabb0bfb18ee9",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 4,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "p2zx+CJosCKigxGlvwP1mwaVuebYlOv8ULU5CDy/Yo8=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "5f8d38ac196acc0e901d87c1e9ec711af07eb0d9fed27d7d291dc343daa91f637289feed22eb360e58a6baa28a135227",
+                    "serverHandshake": "af3f79bc28406f8a7f3b34e1695335edde3709a51827faf8769241eba49684d914ce4ccab36712ba66a37de40fd68548",
+                    "clientFinished": "795ed6584354e5b9dabd423c6e095fda9e76d470d5a254ff798c84fd6d1f54cb8be4f7b9f98e97584a9633b3c3389323",
+                    "serverFinished": "1deb2ac745a1a7006dc01350c6d1b294159724959e0862b50fe666f10b2f32822326453b97e4e93a0f71b1c60c9a0bac"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 480242
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 0,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "49dcb271-353d-4266-a3c1-d01f355370f1"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779440847568,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/ai",
+            "method": "OPTIONS",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "access-control-request-method": "POST",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffaabb14c1f0cc7",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "origin": "https://gitfolio.harmnix.com",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "Uj+4VyOxD7nc/3wdKx+56RKKoG21QCfiYRQEpgUrFxM=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "f2811941bd23a488658a6f47d13abc79fa1b19096f07f06ee40be36971664e19c8c32f27a841a9b96c5817b197b61cbd",
+                    "serverHandshake": "35c5d187e9fad6d60b0fb2f2ca08e77f3e112807af54b5534ab585dd2202a8b4c88b6bcfb0b1de929c437d9b8a6972ec",
+                    "clientFinished": "5e34c4a19f0093e30e64c98e891bcfa158038592ff67f87b4f3ba5ada830c610784b0c237e8c2afae3e717a8285e9fd5",
+                    "serverFinished": "f5b164d98fe5b24ca636c18689c4c6549c9dbb9a9fab0679982f4ea9ef75a80a84be94c0402fb641150f7c65e887154f"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 920399
+                }
+            }
+        },
+        "response": {
+            "status": 204
+        }
+    }
+}
+{
+    "wallTime": 0,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "49dcb271-353d-4266-a3c1-d01f355370f1"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779440847392,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/badge/adityayadavdev/python",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffaabb02fb8b8bf",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 4,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "WHpfTp3OkGgtLvkz8oBEJk3PL9Sjf94E9cVPUl09nQk=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "e43e526e7475f78d3312be7a2ccc56a7ea0f715e134a9ba540365d04b05a19f19da6e751cab6ce131ee3af58e768549d",
+                    "serverHandshake": "915ac1c0f29c57477eb9e91f5ed51211ff3e3a32ce0840c540366d29cb26923a56eb2266deed05dc194df42ccace81e7",
+                    "clientFinished": "e803e2d2ece3b4a66e6129e4c41fda4c59993d14a988278442d3925c407b013a09fd864a08c4f68858202cef9ebd90ec",
+                    "serverFinished": "a84b06b97d902a6ee374cefb6174dd3b8757d67edbf43538ea2d97684793c77921f7a8db3b5d883ade8f5f2c944e03eb"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 697776
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 0,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "49dcb271-353d-4266-a3c1-d01f355370f1"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779441203417,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/ai",
+            "method": "POST",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffab4615cccafb0",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "content-length": "113",
+                "content-type": "application/json",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "/omdhfF6BD8FAGwW+Xk3n+95lIFzqGM2wjtH4xhK6pE=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "8e62bed137833fb8926fa086f9953305421f0bfc893d182b1e259b42ad000d1c0f62f36a3451e3cbb78741d5def09746",
+                    "serverHandshake": "42fbfc65d208ad931635811a49315e3ac68f856b1ce62ed32719ea66058db0ad3ce81196fe1d3d9919f0329a60897368",
+                    "clientFinished": "5c800af838476cd52ad24084806dc6ce185d83658523ec97836368d70eccaec6e883fc177b4391fe823446d7b122a240",
+                    "serverFinished": "6f44ec00ceb37e9efbcd500c90a94e68c65203104fb3ab79838fba19c84e5db981f35f6a0084bd90544122ace4d6f35e"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 876342
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 2,
+    "cpuTime": 1,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "49dcb271-353d-4266-a3c1-d01f355370f1"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779441284882,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/ai",
+            "method": "POST",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffab65e790a3a22",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "content-length": "113",
+                "content-type": "application/json",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 4,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "GkcO9u9p06ZD3YRWtsookgc0TT5mnb31iAJ4AyrwTmU=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "2e8fc67a3f78fd4519b96bc8796e87115e898d7a16388c6bc88f48dbc8f4d8d827a97138f1ababa827afa5d6ebd60bbc",
+                    "serverHandshake": "1b480fcc1a93667985f4f28c12e2c022ec60bcda956ff3012ee143db49a3d17258cf41dc2576925858d930c8d6c5a4b6",
+                    "clientFinished": "e1db7264861d3ac2aa5a97d6a97feb3685e0c84c6de8dc8b6e6a7061056b5c176d66679ae7f0b183efa0e5e2a2681ea1",
+                    "serverFinished": "a3790536454b8ec5347484795856caf0dc1b11655ec986fa1d45ff25bbddc92030c219c59765ef2e75d2b132fe80afe5"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 695059
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 1,
+    "cpuTime": 1,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "0db760fa-e897-42c6-892b-b9295120428e"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443050114,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/ai",
+            "method": "POST",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae1772c08afb0",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "content-length": "113",
+                "content-type": "application/json",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "D20LftWD4zmyx75Fs7Y2vYpTc8/4ADy9vC+S8JA2Cik=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "fe945b58ce5544a224eba763e2c4dc421ee5eb941be3c6a035b43953ec111c95548cba0971a65671ab01815695ebda61",
+                    "serverHandshake": "4754fa3b6f9e9942b5c37d9fade33cf30983fd2a77014199a5a8e84c06404fb0b53fe274d80fd65c9498ab43e9d766f7",
+                    "clientFinished": "883b71805e3d13747a087276e2414eca3e2c7037da69b36bd84ac221da2108273a9eba894157491fcf66aa76e7abdb7a",
+                    "serverFinished": "56e860da8a03afea3a5a71e2a4c7a78f6a07494dffb884bb4d21d1fcea6f79044d1a0b8666168824e982c4216d35d4dd"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 856371
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 1,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "0db760fa-e897-42c6-892b-b9295120428e"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443050162,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/badge/adityayadavdev/python",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae1777eb4408d",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 4,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "21vPni0YsnUZrscEeRbJ0MPIdZesq05NkhNqvXZBDSQ=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "8de1858ef036d5c5ae5594f66205377e657c9de299e8e0b67e4ed4b82481fd3ce4d17c7757b9b40c25c8034b343cfe77",
+                    "serverHandshake": "51b96ffcad278ce775ed42bfefcf1462ed5cdc3e402b95a934f6176fffd823234f47eaa38b131f3fe1021971e53fe018",
+                    "clientFinished": "c9b9ffa6aa7581bc8fd88efcc0da95c6cae93df329f044eb87204dfa920b153e1a4d7e8240292e91f474309c6503303c",
+                    "serverFinished": "ea11819730f5e1f779ffcfb7f9a50cbfb8f0541b060ab10e55d39f215458eeb801bf9ae82bfe68c06c246f7709cb35bc"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 713821
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 1,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "0db760fa-e897-42c6-892b-b9295120428e"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443050219,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/license/by-order?order_id=fake123",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae177d9b4345a",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "1kQigBVcGobOP/j63okJ4EeNaEE58okrVZzv2DVQZVw=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "164abcf140106948d8c56cb16c3bd8f4a8eed3a6a1d82831f48d54806e798ad3c759e310f2b3a4f9e43e2ddf9c2e1c97",
+                    "serverHandshake": "a051b4a936e8c4a1e04bc3c149c5ca41a1087c425d71ba38a62adbf0e5b76bec186f1a0f62e6eec9f99ce927e28e1801",
+                    "clientFinished": "2beb29212778d0935355a8a0dc1d45b89734252bb24853b11beea385a21d5fafb23f7c8a1d11b9659a640a25c9efda03",
+                    "serverFinished": "27c92430f229dbeba85bc3a1d854cd68a2cd053d0d914be0611437ec1a496e06e9eff0810c4cdfa105b1cfec89d7ef05"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 980096
+                }
+            }
+        },
+        "response": {
+            "status": 500
+        }
+    }
+}
+{
+    "wallTime": 0,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "0db760fa-e897-42c6-892b-b9295120428e"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443050291,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/ai",
+            "method": "OPTIONS",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "access-control-request-method": "POST",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae17849b4d9f4",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "origin": "https://gitfolio.harmnix.com",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "W9N9Ql5DVbcntOSQG+aQ8tx+IrvEKFaKymOZP8sEwXY=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "da6b067249911255a21c1dfaaaa994520e4c10417e37b8ff6e6d55e71945d506a4975dd6f75cdcb331e19dc780e2e3cb",
+                    "serverHandshake": "d3fd753230b9d01d249ace96c0d689f98e7fefce1dc7de82210fc797c2eb3cd1c8c3ac9aace7166b70eb7dcf74687e5c",
+                    "clientFinished": "e2daeca57b210081e737d02fb8a2d4a1b5c7c933638b65ff53b19ff77417e6155144f266c1a3c6955b9ea31b4bec5076",
+                    "serverFinished": "483ac1851259a78b5379388e215165eaf4084ddd43b96bcde774b6012d9b25f16273e3a1406fdded172ada99b2522619"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 966824
+                }
+            }
+        },
+        "response": {
+            "status": 204
+        }
+    }
+}
+{
+    "wallTime": 0,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "0db760fa-e897-42c6-892b-b9295120428e"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443050018,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/premium/status",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae1769970dc57",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 8,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "l2DZeYm/Ftx8SqSbr1Bjk2hdoKzmDZWhDJv1UxCxfcE=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "cd79924a5fea5218f27c6d9c5f2a4f01283520e5569d0a1d87f00d34463d10f2ad6167e09161bf33ff3184483247e769",
+                    "serverHandshake": "2ca13afcca85aa43a8229f5833ad6b45e5edc51bebb3fc876fd2152f13f71d5d76dca233b3ceee254cd367bf2f7017ee",
+                    "clientFinished": "439eb374ecccfb1f7813d1b6c1d152773928430197165f989d5b236462a64cfea55eabc37aff261271d445c8ffedb415",
+                    "serverFinished": "79cad3559009f1e0b382f1e7e9869488fd1b66dcaae78674b96046f565ea63fc8ba2490373a6933f7af9b7a0c218c3c1"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 333100
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 1,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "a1c1e191-98e5-4531-8138-1e4c5e04b36b"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443255079,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/premium/status",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae6783ef92edc",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 2,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "UIL++PHEvPF9SUHrnSjnpl6T2rMr70IUqNxB1cQq2xQ=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "7f011d8b35a6c00161f46fa4a0d3002189aed473d25cf23e060772aaafca5fdb5ab381139a18e9c67e18c4a61d38bba8",
+                    "serverHandshake": "3a1ad18cc52ce0c35bfde5d8a774cbbbd7a1fb7bab1c63271b48b60d1f860681667ba26bd112fd4940b0b4889815cd35",
+                    "clientFinished": "b9c1d0f8220ca91953ab02b92cc2f6699c988d297785e48fb9c9e12b283f4db89d4b899ff359c3b8db018116b6bf2013",
+                    "serverFinished": "954e6d358363f8ef5dd26d16fb05b18d385d2504c171376972d21a43cdbad77224eb66a6c2111757354a094abd6f2e93"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 1009900
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 1089,
+    "cpuTime": 2,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "a1c1e191-98e5-4531-8138-1e4c5e04b36b"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [
+        {
+            "message": [
+                "Gemini failed with status 400"
+            ],
+            "level": "error",
+            "timestamp": 1779443255957
+        },
+        {
+            "message": [
+                "Model meta-llama/llama-3.1-8b-instruct:free failed with status 404"
+            ],
+            "level": "error",
+            "timestamp": 1779443256340
+        }
+    ],
+    "eventTimestamp": 1779443255257,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/ai",
+            "method": "POST",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae6795c0dc0d9",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "content-length": "110",
+                "content-type": "application/json",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "Fk0DB3zYmg2at1ZUdBCvG1wduEP8zvFj31Ggiv0a/5U=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "e0f76c5413f2528f89c87b7d6953ca38db5c851d25fcf558056da8e31709b348c816b8b6790d8c7fc757f50386e253d4",
+                    "serverHandshake": "cda88076899f0fb24c15714d7e69c503a01b11705fe6a0a8bcb10297b62186a2c0410107b4bab5df03dc170e2dee27f8",
+                    "clientFinished": "a08f16231d6dcfbd587916c6491e1435d4eb3d4d43e63eff420f9c38fd5e69588266915a0f83dcfc6e3d98b89f01d7be",
+                    "serverFinished": "26d0ed23f3f3b946244aa1792c77d3e676db5ca4c1b1ca8b9efb80fb27df77a648fb8622eb7565d5f14ec0ccca062a86"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 833625
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 1,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "a1c1e191-98e5-4531-8138-1e4c5e04b36b"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443257219,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/ai",
+            "method": "OPTIONS",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "access-control-request-method": "POST",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae6859e2aff71",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "origin": "https://gitfolio.harmnix.com",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "C5WPUwvvU74PpGL0ES0n4Hist9zHQoxYQE0PGfcaDj0=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "34f4ad4e20b1c76d85e1890c1cccd669daa8dd61292bd45d1bff50ce8c9ebc923a9505e0b99a4cf3cc7c2a53e6f0fb69",
+                    "serverHandshake": "cd7d45b41e441b0b9f7b6a74e214e11786b2411cfb4eeb77ed9f5529ec4b55efccaf22878823a29369788d231c839a78",
+                    "clientFinished": "c8a56423da4a3cda6d7a41ea4fc2048bfdc2d3415e07d5074443323d0c123a871de3a7e8bdb3804ac9cfb1fbeaf66692",
+                    "serverFinished": "f98bb960db20018348e83e05069969a25435c1a5061121840b4856525842530dad50223270485cd67196bac0a723569f"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 778201
+                }
+            }
+        },
+        "response": {
+            "status": 204
+        }
+    }
+}
+{
+    "wallTime": 656,
+    "cpuTime": 1,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "a1c1e191-98e5-4531-8138-1e4c5e04b36b"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443256402,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/badge/adityayadavdev/python",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae6807d721340",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "+7rZhL/L0THmyiuugCAfulP7Yw+UftA04A1nrDfGT4g=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "ac90616e3bd6048401b68438ee53569edc4a7bb2465b1fa7e291a1831aa1c774855de9dbe0945e7bb31ac98dc23d3e59",
+                    "serverHandshake": "866873cd6666e6b23c87ffb91a095891a7a44b0029091c05538dc855085163a3e6aa91386a9f07f294bed2442d787d16",
+                    "clientFinished": "ebb67639d27012657d78c26bb1f2e34ac9248d51b13b03bf8e21cd25dcb9775a796c5976615491f55e594d0aae3daa86",
+                    "serverFinished": "80028c7a1d9f103dbcea4f84879f29f1118b9a65f677b42acb99c5ccea8ca98f4235a5af350e62dc7e9fa734fc6d6536"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 788079
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 416,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "a1c1e191-98e5-4531-8138-1e4c5e04b36b"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443256734,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/license/by-order?order_id=fake123",
+            "method": "GET",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae6829d5ff9b4",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 4,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "kW2DKpje6/O6C0QMSYVe7VMZoBuXrOOKHAwM3hS0x2s=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "bd6b673454ecd2b541221f30dfa443852c3146d57bed665756912b82b94451877c31ad412e9c24ccc6946d75dd153ec5",
+                    "serverHandshake": "dc2335a57b8b5bc970102f4994bfec749b02ee935adfab832b2f0323efbf21f6976b616fbfb59cb17849a7a05941dca1",
+                    "clientFinished": "9ded7e2b84ffe6c938295ea88026760d8265278a59b75b1420c9916e467ba6844a8142f0d41f981e4b6985493cf6ad58",
+                    "serverFinished": "031dd6f4f7c6ed758a64cdb9f8f30d2980df085ff3fcadf89638b3fdb7d0aa260b3b1dc4169bd8ed74db778047ad7ee1"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 700515
+                }
+            }
+        },
+        "response": {
+            "status": 200
+        }
+    }
+}
+{
+    "wallTime": 0,
+    "cpuTime": 0,
+    "truncated": false,
+    "executionModel": "stateless",
+    "outcome": "ok",
+    "scriptVersion": {
+        "id": "a1c1e191-98e5-4531-8138-1e4c5e04b36b"
+    },
+    "scriptName": "gitfolio-workers",
+    "diagnosticsChannelEvents": [],
+    "exceptions": [],
+    "logs": [],
+    "eventTimestamp": 1779443262444,
+    "event": {
+        "request": {
+            "url": "https://gitfolio-workers.gitfolio-api.workers.dev/ai",
+            "method": "OPTIONS",
+            "headers": {
+                "accept": "*/*",
+                "accept-encoding": "gzip, br",
+                "access-control-request-method": "POST",
+                "cf-connecting-ip": "20.192.21.58",
+                "cf-ipcountry": "IN",
+                "cf-ray": "9ffae6a63f3c4565",
+                "cf-visitor": "{\"scheme\":\"https\"}",
+                "connection": "Keep-Alive",
+                "host": "gitfolio-workers.gitfolio-api.workers.dev",
+                "origin": "https://gitfolio.harmnix.com",
+                "user-agent": "curl/8.5.0",
+                "x-forwarded-proto": "https",
+                "x-real-ip": "20.192.21.58"
+            },
+            "cf": {
+                "httpProtocol": "HTTP/2",
+                "requestPriority": "weight=16;exclusive=0;group=0;group-weight=0",
+                "edgeRequestKeepAliveStatus": 1,
+                "requestHeaderNames": {},
+                "clientTcpRtt": 3,
+                "clientQuicRtt": 0,
+                "colo": "BOM",
+                "asn": 8075,
+                "asOrganization": "Microsoft Corporation",
+                "country": "IN",
+                "isEUCountry": false,
+                "city": "Pune",
+                "continent": "AS",
+                "region": "Maharashtra",
+                "regionCode": "MH",
+                "timezone": "Asia/Kolkata",
+                "longitude": "73.85535",
+                "latitude": "18.51957",
+                "postalCode": "411001",
+                "tlsVersion": "TLSv1.3",
+                "tlsCipher": "AEAD-AES256-GCM-SHA384",
+                "tlsClientRandom": "kIXJORIXOhGUUoZjqBpfN7pYqQW0yYojY+PzDdltPHs=",
+                "tlsClientCiphersSha1": "GXSPDLP4G3X+prK73a4wBuOaHRc=",
+                "tlsClientExtensionsSha1": "tlH5gnoC5Z1HF45J5OgHEi338V0=",
+                "tlsClientExtensionsSha1Le": "mRCkyUCRFDTLCNHGQsZNFhkU1/4=",
+                "tlsExportedAuthenticator": {
+                    "clientHandshake": "351ca84d09bc46b0693fb5259ee53ff946fc0e4fdd9c7749bc6085e85a5ca32b81e5dab02cc758044d3ac496a2cbca91",
+                    "serverHandshake": "cd0d3ba69841775bfa711b813175885d4885e2c6b7e1f02dfb17addff2ddcd738a3ac1eab329d8c7c3d8a7a024fe37ff",
+                    "clientFinished": "3fd549888e432b4ad193926e7b0b071bce222ff8c18bb3c3ff9be23af12aa403440bd40d5b27e0f9c0fe4db298223924",
+                    "serverFinished": "eba0787e6b2e984d02e91596111d0e1b3f555c9a019fe9af02c38f595a2ea4d70c9fd1d2bada8e7e98747491707253dd"
+                },
+                "tlsClientHelloLength": "508",
+                "tlsClientAuth": {
+                    "certPresented": "0",
+                    "certVerified": "NONE",
+                    "certRevoked": "0",
+                    "certIssuerDN": "",
+                    "certSubjectDN": "",
+                    "certIssuerDNRFC2253": "",
+                    "certSubjectDNRFC2253": "",
+                    "certIssuerDNLegacy": "",
+                    "certSubjectDNLegacy": "",
+                    "certSerial": "",
+                    "certIssuerSerial": "",
+                    "certSKI": "",
+                    "certIssuerSKI": "",
+                    "certFingerprintSHA1": "",
+                    "certFingerprintSHA256": "",
+                    "certNotBefore": "",
+                    "certNotAfter": "",
+                    "certRFC9440": "",
+                    "certRFC9440TooLarge": false,
+                    "certChainRFC9440": "",
+                    "certChainRFC9440TooLarge": false
+                },
+                "verifiedBotCategory": "",
+                "edgeL4": {
+                    "deliveryRate": 705359
+                }
+            }
+        },
+        "response": {
+            "status": 204
+        }
+    }
+}

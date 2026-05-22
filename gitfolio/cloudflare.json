@@ -1,0 +1,8 @@
+{ 
+  "pages": { 
+    "build": { 
+      "command": "npm run build", 
+      "directory": "dist" 
+    } 
+  } 
+}

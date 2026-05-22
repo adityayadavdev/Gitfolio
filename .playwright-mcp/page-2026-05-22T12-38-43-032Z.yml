@@ -1,0 +1,36 @@
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - heading "Turn your GitHub into a placement portfolio" [level=1] [ref=e7]
+    - paragraph [ref=e8]: Analytics, quality scores, and a shareable portfolio page — built for Indian developers.
+    - button "Connect GitHub" [active] [ref=e9] [cursor=pointer]
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - img [ref=e14]
+      - heading "Smart filtering" [level=3] [ref=e16]
+      - paragraph [ref=e17]: Automatically removes forks and assignments to showcase your original work.
+    - generic [ref=e18]:
+      - img [ref=e20]
+      - heading "Depth scores" [level=3] [ref=e21]
+      - paragraph [ref=e22]: Go beyond language bars. Get a real depth score based on commit quality and complexity.
+    - generic [ref=e23]:
+      - img [ref=e25]
+      - heading "Shareable portfolio" [level=3] [ref=e31]
+      - paragraph [ref=e32]: One clean, professional link to send to recruiters and hiring managers.
+  - contentinfo [ref=e33]: Free to use. No email required. No data stored on our servers.
+  - generic [ref=e35]:
+    - button [ref=e36] [cursor=pointer]:
+      - img [ref=e37]
+    - generic [ref=e40]:
+      - img [ref=e42]
+      - heading "Connect GitHub" [level=2] [ref=e44]
+      - paragraph [ref=e45]: Authorize Gitfolio to analyze your repositories
+      - generic [ref=e46]:
+        - paragraph [ref=e47]: Your User Code
+        - generic [ref=e48]: 2887-3DA4
+        - button "Copy Verification Link" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - text: Copy Verification Link
+      - generic [ref=e53]:
+        - img [ref=e54]
+        - generic [ref=e56]: Waiting for authorization...
+      - paragraph [ref=e57]: Code expires in 14:58

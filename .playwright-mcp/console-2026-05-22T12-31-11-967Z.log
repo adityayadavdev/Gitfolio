@@ -1,0 +1,14 @@
+[      92ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflare.com/beacon.min.js:0
+[     174ms] [WARNING] Error while trying to use the following icon from the Manifest: https://gitfolio.harmnix.com/pwa-192x192.png (Download error or resource isn't a valid image) @ https://gitfolio.harmnix.com/:0
+[     484ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ https://gitfolio.harmnix.com/assets/LockedFeature-De758ZCL.js:33
+[     485ms] [ASSERT] Should be frontend or fullstack @ https://gitfolio.harmnix.com/assets/LockedFeature-De758ZCL.js:67
+[     485ms] [ASSERT] Should be dsa_cp for DSA repo @ https://gitfolio.harmnix.com/assets/LockedFeature-De758ZCL.js:67
+[     723ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:0
+[     728ms] [ASSERT] Should be frontend or fullstack @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[     728ms] [ASSERT] Should be dsa_cp for DSA repo @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[     742ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:0
+[     749ms] [ASSERT] Should be frontend or fullstack @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[     750ms] [ASSERT] Should be dsa_cp for DSA repo @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[     754ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:0
+[     756ms] [ASSERT] Should be frontend or fullstack @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[     756ms] [ASSERT] Should be dsa_cp for DSA repo @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34

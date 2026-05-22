@@ -1,0 +1,224 @@
+[      99ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflare.com/beacon.min.js:0
+[     117ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:14337
+[     199ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     199ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     199ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     204ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     204ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     204ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     303ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ http://localhost:5173/src/analytics/languageScore.js:91
+[     304ms] [ASSERT] Should be frontend or fullstack @ http://localhost:5173/src/analytics/domainClassifier.js:212
+[     305ms] [ASSERT] Should be dsa_cp for DSA repo @ http://localhost:5173/src/analytics/domainClassifier.js:215
+[     595ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     596ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     596ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     598ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     599ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     599ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     599ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     599ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     599ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     599ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     599ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     599ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     599ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     599ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     599ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     605ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     605ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     605ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     605ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     605ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     606ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     606ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     606ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     606ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     606ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     606ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     606ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     606ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     614ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     615ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     615ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     615ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     615ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     615ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     615ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     615ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     787ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     787ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     787ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     787ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     787ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     787ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     787ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     788ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     788ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     788ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     788ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     788ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     788ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     788ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     788ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     788ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     788ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     788ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     796ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     796ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     797ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     797ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     797ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     797ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     797ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     797ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     797ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[     802ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[     802ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[     803ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[    1045ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[    1047ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[    1047ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[    1048ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[    1048ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[    1048ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[    1048ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[    1048ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[    1048ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[    1061ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[    1061ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[    1061ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[    1061ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[    1061ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[    1061ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[    1062ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/premium/status' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[    1062ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/premium/status:0
+[    1062ms] [ERROR] Error verifying premium status: TypeError: Failed to fetch
+    at verifyPremiumStatus (http://localhost:5173/src/hooks/usePremium.js:17:29) @ http://localhost:5173/src/hooks/usePremium.js:34
+[    1065ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[    1122ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[    1139ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[    1224ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[    1237ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[    1300ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[    1364ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[    1385ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[    1453ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[    1463ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   17671ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflare.com/beacon.min.js:0
+[   17888ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:14337
+[   18408ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ http://localhost:5173/src/analytics/languageScore.js:91
+[   18408ms] [ASSERT] Should be frontend or fullstack @ http://localhost:5173/src/analytics/domainClassifier.js:212
+[   18408ms] [ASSERT] Should be dsa_cp for DSA repo @ http://localhost:5173/src/analytics/domainClassifier.js:215
+[   19637ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   19729ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   19764ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   20151ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   20501ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   20831ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   21100ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   21221ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   21227ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   21274ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   21290ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   21305ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   37851ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/ai' from origin 'http://localhost:5173' has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:5173/dashboard:0
+[   37852ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/ai:0
+[   62956ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflare.com/beacon.min.js:0
+[   63150ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:14337
+[   64033ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ http://localhost:5173/src/analytics/languageScore.js:91
+[   64034ms] [ASSERT] Should be frontend or fullstack @ http://localhost:5173/src/analytics/domainClassifier.js:212
+[   64034ms] [ASSERT] Should be dsa_cp for DSA repo @ http://localhost:5173/src/analytics/domainClassifier.js:215
+[   65774ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   65851ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   65897ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   65994ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   66176ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   66219ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   66400ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   66415ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   66501ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   66502ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   66505ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   66526ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   93733ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflare.com/beacon.min.js:0
+[   93938ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:14337
+[   94482ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ http://localhost:5173/src/analytics/languageScore.js:91
+[   94483ms] [ASSERT] Should be frontend or fullstack @ http://localhost:5173/src/analytics/domainClassifier.js:212
+[   94483ms] [ASSERT] Should be dsa_cp for DSA repo @ http://localhost:5173/src/analytics/domainClassifier.js:215
+[   95021ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95175ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95176ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95390ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95493ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95560ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95640ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95711ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95889ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95924ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   95962ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[   96012ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[  104363ms] [ERROR] %o
+
+%s
+
+%s
+ ReferenceError: JobMatchAnalyzer is not defined
+    at Dashboard (http://localhost:5173/src/pages/Dashboard.jsx?t=1779451233173:1109:41)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:12868:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:4213:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:5569:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:6140:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:851:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:8429:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:8325:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:8309:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:7994:27) The above error occurred in the <Dashboard> component. React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:5273
+[  104365ms] [ERROR] ErrorBoundary caught an error ReferenceError: JobMatchAnalyzer is not defined
+    at Dashboard (http://localhost:5173/src/pages/Dashboard.jsx?t=1779451233173:1109:41)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:12868:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:4213:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:5569:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:6140:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:851:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:8429:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:8325:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:8309:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=69040897:7994:27) {componentStack: 
+    at Dashboard (http://localhost:5173/src/pages…/localhost:5173/src/App.jsx?t=1779451125241:51:2)} @ http://localhost:5173/src/components/ErrorBoundary.jsx:13
+[  113947ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[  113960ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[  114042ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[  114096ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[  114122ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[  114147ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[  114253ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182
+[  114416ms] [ERROR] Analytics computation failed: ErrorEvent @ http://localhost:5173/src/hooks/useGitHubData.js:182

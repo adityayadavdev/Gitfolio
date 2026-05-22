@@ -1,0 +1,8 @@
+{
+  "name": "gitfolio-workers",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

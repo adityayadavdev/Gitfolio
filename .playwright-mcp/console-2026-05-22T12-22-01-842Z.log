@@ -1,0 +1,16 @@
+[      48ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflare.com/beacon.min.js:0
+[     109ms] [WARNING] Error while trying to use the following icon from the Manifest: https://gitfolio.harmnix.com/pwa-192x192.png (Download error or resource isn't a valid image) @ https://gitfolio.harmnix.com/:0
+[   29693ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflare.com/beacon.min.js:0
+[   29750ms] [WARNING] Error while trying to use the following icon from the Manifest: https://gitfolio.harmnix.com/pwa-192x192.png (Download error or resource isn't a valid image) @ https://gitfolio.harmnix.com/:0
+[   30352ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ https://gitfolio.harmnix.com/assets/LockedFeature-De758ZCL.js:33
+[   30361ms] [ASSERT] Should be frontend or fullstack @ https://gitfolio.harmnix.com/assets/LockedFeature-De758ZCL.js:67
+[   30365ms] [ASSERT] Should be dsa_cp for DSA repo @ https://gitfolio.harmnix.com/assets/LockedFeature-De758ZCL.js:67
+[   32181ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:0
+[   32185ms] [ASSERT] Should be frontend or fullstack @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[   32194ms] [ASSERT] Should be dsa_cp for DSA repo @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[   32215ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:0
+[   32230ms] [ASSERT] Should be frontend or fullstack @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[   32231ms] [ASSERT] Should be dsa_cp for DSA repo @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[   32231ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:0
+[   32236ms] [ASSERT] Should be frontend or fullstack @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34
+[   32237ms] [ASSERT] Should be dsa_cp for DSA repo @ https://gitfolio.harmnix.com/assets/analyticsWorker-rEmvDbS3.js:34

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--headless",
+        "--browser",
+        "chromium",
+        "--viewport-size",
+        "1920,1080",
+        "--output-dir",
+        "/tmp/playwright-screenshots"
+      ]
+    }
+  }
+}

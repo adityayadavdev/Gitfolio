@@ -1,0 +1,19 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - heading "Turn your GitHub into a placement portfolio" [level=1] [ref=e5]
+    - paragraph [ref=e6]: Analytics, quality scores, and a shareable portfolio page — built for Indian developers.
+    - button "Connect GitHub" [ref=e7] [cursor=pointer]
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - img [ref=e12]
+      - heading "Smart filtering" [level=3] [ref=e14]
+      - paragraph [ref=e15]: Automatically removes forks and assignments to showcase your original work.
+    - generic [ref=e16]:
+      - img [ref=e18]
+      - heading "Depth scores" [level=3] [ref=e19]
+      - paragraph [ref=e20]: Go beyond language bars. Get a real depth score based on commit quality and complexity.
+    - generic [ref=e21]:
+      - img [ref=e23]
+      - heading "Shareable portfolio" [level=3] [ref=e29]
+      - paragraph [ref=e30]: One clean, professional link to send to recruiters and hiring managers.
+  - contentinfo [ref=e31]: Free to use. No email required. No data stored on our servers.

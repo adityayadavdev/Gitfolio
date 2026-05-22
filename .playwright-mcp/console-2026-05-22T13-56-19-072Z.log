@@ -1,0 +1,7 @@
+[      62ms] [ERROR] Auth: error caught in pollForToken.catch TypeError: Failed to fetch
+    at s (https://gitfolio.harmnix.com/assets/index-CzwVbbm-.js:20:30646) @ https://gitfolio.harmnix.com/assets/index-CzwVbbm-.js:19
+[     349ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflare.com/beacon.min.js:0
+[     639ms] [WARNING] Error while trying to use the following icon from the Manifest: https://gitfolio.harmnix.com/pwa-192x192.png (Download error or resource isn't a valid image) @ https://gitfolio.harmnix.com/u/adityayadavdev:0
+[     661ms] [ASSERT] Test 1 failed: Expected JavaScript as top language, got Python @ https://gitfolio.harmnix.com/assets/LockedFeature-De758ZCL.js:33
+[     666ms] [ASSERT] Should be frontend or fullstack @ https://gitfolio.harmnix.com/assets/LockedFeature-De758ZCL.js:67
+[     668ms] [ASSERT] Should be dsa_cp for DSA repo @ https://gitfolio.harmnix.com/assets/LockedFeature-De758ZCL.js:67
