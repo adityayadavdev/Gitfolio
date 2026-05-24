@@ -1,7 +1,6 @@
 import { useMemo, useState, useEffect } from 'react';
 import { 
   MapPin, 
-  Briefcase, 
   Globe, 
   Share2, 
   FileDown, 
@@ -13,7 +12,10 @@ import {
   ExternalLink, 
   CheckCircle2, 
   XCircle, 
-  Sparkles 
+  Sparkles,
+  Building2,
+  Lock,
+  CalendarOff
 } from 'lucide-react';
 import { useAuth } from '../hooks/useAuth';
 import { useGitHubData } from '../hooks/useGitHubData';
@@ -29,12 +31,55 @@ import {
 } from '../analytics';
 import { Card, Badge, Button, Skeleton } from '../components/ui';
 import PremiumGate from '../components/PremiumGate';
-import LockedFeature from '../components/LockedFeature';
 import RepoImprover from '../components/AIFeatures/RepoImprover';
 import ShareModal from '../components/ShareModal';
 import ShareKit from '../components/ShareKit';
 import { exportPortfolioPDF } from '../services/pdfExport';
 import PlacementCard from '../components/PlacementCard';
+
+const CompactPremiumLock = ({ featureName, description, onUnlock }) => (
+  <div style={{ 
+    backgroundColor: '#161b22', 
+    border: '0.5px solid #30363d', 
+    borderRadius: '10px', 
+    padding: '14px 18px', 
+    display: 'flex', 
+    alignItems: 'center', 
+    gap: '14px', 
+    width: '100%' 
+  }}>
+    <div style={{ 
+      width: '36px', 
+      height: '36px', 
+      borderRadius: '8px', 
+      backgroundColor: '#2a1a1a', 
+      color: '#e3b341', 
+      display: 'flex', 
+      alignItems: 'center', 
+      justifyContent: 'center' 
+    }}>
+      <Lock size={16} />
+    </div>
+    <div style={{ flex: 1, minWidth: 0 }}>
+      <div style={{ fontSize: '13px', fontWeight: '500', color: '#e6edf3', marginBottom: '2px' }}>{featureName}</div>
+      <div style={{ fontSize: '11px', color: '#8b949e', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{description}</div>
+    </div>
+    <button 
+      onClick={onUnlock}
+      style={{ 
+        fontSize: '11px', 
+        padding: '6px 12px', 
+        borderRadius: '6px', 
+        backgroundColor: '#1c2a3a', 
+        color: '#58a6ff', 
+        border: '0.5px solid #388bfd', 
+        cursor: 'pointer' 
+      }}
+    >
+      Unlock
+    </button>
+  </div>
+);
 
 const Dashboard = () => {
   const { user, token } = useAuth();
@@ -55,6 +100,10 @@ const Dashboard = () => {
   const [isShareModalOpen, setShareModalOpen] = useState(false);
   const [publicPRs, setPublicPRs] = useState([]);
   const [prsLoading, setPrsLoading] = useState(true);
+  const [jd, setJd] = useState('');
+  const [matchResult, setMatchResult] = useState(null);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [toast, setToast] = useState(null);
 
   useEffect(() => {
     // Framework detection is handled in a separate useEffect below
@@ -188,8 +237,25 @@ const Dashboard = () => {
 
   const displayProjects = isPremium ? filteredProjects : filteredProjects.slice(0, 5);
 
-  const openShareModal = () => {
-    setShareModalOpen(true);
+  const handleAnalyze = async () => {
+    if (!jd.trim()) return;
+    setIsAnalyzing(true);
+    try {
+      const response = await fetch('/ai', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          feature: 'job-match', 
+          jobDescription: jd 
+        }),
+      });
+      const data = await response.json();
+      setMatchResult(data);
+    } catch (e) {
+      console.error('Analysis failed', e);
+    } finally {
+      setIsAnalyzing(false);
+    }
   };
 
   if (isLoading && !profile) {
@@ -221,91 +287,144 @@ const Dashboard = () => {
         />
       </div>
 
-      <div className="max-w-[1200px] mx-auto p-4 md:p-8 space-y-8">
+      <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '24px 24px', width: '100%' }} className="space-y-8">
         {/* Profile Header */}
-        <section className="flex flex-col md:flex-row gap-8 items-start md:items-center justify-between">
-          <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
-            <img 
-              src={profile?.avatar_url + '?s=80'} 
-              alt={profile?.name} 
-              loading="lazy"
-              className="w-24 h-24 rounded-full border-2 border-[#30363d]" 
-            />
-            <div className="space-y-2">
-              <div className="flex items-center gap-3">
-                <h1 className="text-3xl font-bold">{profile?.name || profile?.login}</h1>
-                <Badge variant="info">@{profile?.login}</Badge>
+        <section style={{ 
+          backgroundColor: '#161b22', 
+          border: '0.5px solid #30363d', 
+          borderRadius: '12px', 
+          padding: '24px 28px', 
+          display: 'flex', 
+          flexDirection: 'row', 
+          alignItems: 'center', 
+          gap: '20px', 
+          marginBottom: '20px', 
+          width: '100%' 
+        }} className="flex-col md:flex-row">
+          {/* Zone A: Avatar */}
+          <div className="shrink-0">
+            {profile?.avatar_url ? (
+              <img 
+                src={profile.avatar_url + '?s=80'} 
+                alt={profile.name} 
+                style={{ width: '72px', height: '72px', borderRadius: '50%', border: '2px solid #30363d' }} 
+              />
+            ) : (
+              <div style={{ 
+                width: '72px', 
+                height: '72px', 
+                borderRadius: '50%', 
+                backgroundColor: '#1f6feb', 
+                color: 'white', 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                fontSize: '24px',
+                fontWeight: 'bold'
+              }}>
+                {profile?.login?.substring(0, 2).toUpperCase() || 'G'}
               </div>
-              <p className="text-[#8b949e] max-w-xl">{profile?.bio}</p>
-              <div className="flex flex-wrap gap-4 text-sm text-[#8b949e]">
-                {profile?.location && <span className="flex items-center gap-1"><MapPin size={14} /> {profile.location}</span>}
-                {profile?.company && <span className="flex items-center gap-1"><Briefcase size={14} /> {profile.company}</span>}
-                {profile?.blog && <a href={profile.blog} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-[#58a6ff] hover:underline"><Globe size={14} /> {profile.blog}</a>}
-              </div>
+            )}
+          </div>
+
+          {/* Zone B: Profile Text */}
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div style={{ fontSize: '20px', fontWeight: '500', color: '#e6edf3', marginBottom: '2px' }}>
+              {profile?.name || profile?.login}
+            </div>
+            <div style={{ fontSize: '13px', color: '#8b949e', marginBottom: '8px' }}>
+              @{profile?.login}
+            </div>
+            <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', fontSize: '12px', color: '#8b949e' }}>
+              {profile?.company && (
+                <span className="flex items-center gap-1"><Building2 size={13} /> {profile.company}</span>
+              )}
+              {profile?.blog && (
+                <a href={profile.blog} target="_blank" rel="noreferrer" className="flex items-center gap-1 text-[#58a6ff] hover:underline">
+                  <Globe size={13} /> {profile.blog}
+                </a>
+              )}
+              {profile?.location && (
+                <span className="flex items-center gap-1"><MapPin size={13} /> {profile.location}</span>
+              )}
+            </div>
+            <div style={{ marginTop: '10px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+              {analytics?.domain?.primary && analytics.domain.primary !== 'Unknown' && (
+                <div style={{ 
+                  backgroundColor: '#1a3a2a', 
+                  color: '#3fb950', 
+                  border: '0.5px solid #2ea043', 
+                  fontSize: '11px', 
+                  padding: '3px 10px', 
+                  borderRadius: '20px', 
+                  fontWeight: '500' 
+                }}>
+                  {analytics.domain.primary.charAt(0).toUpperCase() + analytics.domain.primary.slice(1).toLowerCase()}
+                </div>
+              )}
+              <button 
+                onClick={() => {
+                  navigator.clipboard.writeText(`https://gitfolio.harmnix.com/u/${user?.login}`);
+                  setToast('Link copied!');
+                  setTimeout(() => setToast(null), 2000);
+                }}
+                style={{ 
+                  backgroundColor: 'transparent', 
+                  color: '#58a6ff', 
+                  border: '0.5px solid #30363d', 
+                  fontSize: '11px', 
+                  padding: '3px 10px', 
+                  borderRadius: '20px', 
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '4px'
+                }}
+              >
+                <Share2 size={12} /> Share portfolio
+              </button>
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-4 bg-[#161b22] border border-[#30363d] p-6 rounded-2xl">
-            <div className="relative w-24 h-24 flex items-center justify-center">
+          {/* Zone C: Readiness Circle */}
+          <div style={{ 
+            backgroundColor: '#0d1117', 
+            border: '0.5px solid #30363d', 
+            borderRadius: '10px', 
+            padding: '16px 20px', 
+            display: 'flex', 
+            flexDirection: 'column', 
+            alignItems: 'center', 
+            gap: '4px',
+            minWidth: '120px'
+          }} className="md:flex-col flex-row md:justify-center justify-between items-center">
+            <div className="relative w-[72px] h-[72px] flex items-center justify-center">
               <svg className="absolute w-full h-full transform -rotate-90">
                 <circle 
-                  cx="48" cy="48" r="40" 
-                  stroke="#30363d" strokeWidth="8" 
+                  cx="36" cy="36" r="30" 
+                  stroke="#30363d" strokeWidth="5" 
                   fill="transparent" 
                 />
                 <circle 
-                  cx="48" cy="48" r="40" 
-                  stroke="#3fb950" strokeWidth="8" 
+                  cx="36" cy="36" r="30" 
+                  stroke="#3fb950" strokeWidth="5" 
                   fill="transparent" 
-                  strokeDasharray={251.2} 
-                  strokeDashoffset={251.2 - (251.2 * (analytics?.overall.interviewReadiness || 0)) / 100} 
+                  strokeDasharray={188.5} 
+                  strokeDashoffset={188.5 - (188.5 * (analytics?.overall?.interviewReadiness || 0)) / 100} 
                   strokeLinecap="round"
                   className="transition-all duration-1000"
                 />
               </svg>
-              <div className="relative font-bold text-xl">
-                {analytics?.overall.interviewReadiness || 0}%
+              <div style={{ position: 'relative', fontSize: '17px', fontWeight: '500', color: '#e6edf3' }}>
+                {analytics?.overall?.interviewReadiness || 0}%
               </div>
             </div>
-            <div className="text-center">
-              <div className="text-xs text-[#8b949e] uppercase tracking-wider font-semibold">Readiness</div>
-              <div className="text-sm font-bold text-[#3fb950] capitalize">{analytics?.overall.tier || 'developing'}</div>
+            <div className="text-center md:mt-2 flex flex-col items-center">
+              <div style={{ fontSize: '10px', color: '#8b949e', letterSpacing: '0.08em', textTransform: 'uppercase' }}>READINESS</div>
+              <div style={{ fontSize: '12px', fontWeight: '500', color: '#3fb950' }}>{analytics?.overall?.tier || 'developing'}</div>
             </div>
-               <div className="flex gap-2">
-                  {analytics?.domain.primary && analytics.domain.primary !== 'Unknown' && <Badge variant="success">{analytics.domain.primary}</Badge>}
-                    <Button 
-                      size="sm"
-                      variant="secondary" 
-                      onClick={openShareModal} 
-                      title="Share Portfolio"
-                      className="p-2 h-8 w-8 flex items-center justify-center"
-                    >
-                     <Share2 size={14} />
-                   </Button>
-
-                  <PremiumGate 
-                    feature="PDF Export" 
-                    fallback={<LockedFeature featureName="PDF Export" />}
-                  >
-                      <Button 
-                        size="sm"
-                        variant="secondary" 
-                        onClick={() => exportPortfolioPDF(user?.login, profile, analytics?.langScores, displayProjects, analytics?.overall, 'minimal')} 
-                        title="Export as PDF"
-                        className="p-2 h-8 w-8 flex items-center justify-center"
-                      >
-                       <FileDown size={14} />
-                     </Button>
-                   </PremiumGate>
-                 </div>
-                 <PremiumGate 
-                   feature="placement_card" 
-                   fallback={<LockedFeature featureName="Placement Card" />}
-                 >
-                   <PlacementCard profile={profile} topProjects={displayProjects} languageScores={analytics?.langScores} />
-                 </PremiumGate>
-            </div>
-         </section>
+          </div>
+        </section>
 
 
         {/* Stats Row */}
@@ -370,22 +489,37 @@ const Dashboard = () => {
               <Calendar size={20} /> Activity Heatmap
             </h2>
             <Card className="overflow-x-auto">
-              <div className="inline-grid grid-flow-col grid-rows-7 gap-[2px] p-2">
-                {contributions?.weeks.flatMap(week => 
-                  week.contributionDays.map((day) => {
-                    const count = day.contributionCount || 0;
-                    const opacity = Math.min(count / 10, 1);
-                    return (
-                      <div 
-                        key={day.date}
-                        title={`${day.date}: ${count} contributions`}
-                        className="w-[10px] h-[10px] rounded-sm transition-colors"
-                        style={{ backgroundColor: count === 0 ? '#161b22' : `rgba(57, 211, 83, ${opacity})` }}
-                      />
-                    );
-                  })
-                )}
-              </div>
+              {analytics?.contribMetrics?.totalContributions === 0 ? (
+                <div className="flex flex-col items-center justify-center py-12 space-y-3 text-center">
+                  <CalendarOff size={24} color="#30363d" />
+                  <div style={{ fontSize: '13px', color: '#8b949e' }}>No contribution data yet</div>
+                  <div style={{ fontSize: '13px', color: '#8b949e', maxWidth: '300px' }}>Connect with a GitHub account that has commit history to see your activity heatmap.</div>
+                </div>
+              ) : (
+                <>
+                  <div className="inline-grid grid-flow-col grid-rows-7 gap-[2px] p-2">
+                    {contributions?.weeks.flatMap(week => 
+                      week.contributionDays.map((day) => {
+                        const count = day.contributionCount || 0;
+                        const opacity = Math.min(count / 10, 1);
+                        return (
+                          <div 
+                            key={day.date}
+                            title={`${day.date}: ${count} contributions`}
+                            className="w-[10px] h-[10px] rounded-sm transition-colors"
+                            style={{ backgroundColor: count === 0 ? '#161b22' : `rgba(57, 211, 83, ${opacity})` }}
+                          />
+                        );
+                      })
+                    )}
+                  </div>
+                  {analytics?.contribMetrics?.totalContributions < 10 && (
+                    <div style={{ fontSize: '12px', color: '#8b949e', textAlign: 'center', marginTop: '8px' }}>
+                      Start committing regularly to build your contribution history. Consistent activity improves your readiness score.
+                    </div>
+                  )}
+                </>
+              )}
             </Card>
           </section>
         </div>
@@ -481,6 +615,114 @@ const Dashboard = () => {
          <ShareKit username={user?.login} profile={profile} languageScores={analytics?.langScores} />
 
 
+         {/* Job Match Analyzer */}
+         <section className="space-y-4">
+           <h2 className="text-xl font-bold flex items-center gap-2">
+             <Sparkles size={20} /> Job Match Analyzer
+           </h2>
+            <PremiumGate 
+              feature="job_match_analyzer" 
+              fallback={<CompactPremiumLock featureName="Job Match Analyzer" description="Analyze how well your profile matches a job description" onUnlock={openUpgradeModal} />}
+            >
+             <Card padding="p-6" className="space-y-6">
+               <div className="space-y-4">
+                 <p className="text-sm text-[#8b949e]">Paste a LinkedIn job description to see how well your profile matches.</p>
+                 <textarea 
+                   value={jd}
+                   onChange={(e) => setJd(e.target.value)}
+                   placeholder="Paste job description here..."
+                   className="w-full h-32 bg-[#0d1117] border border-[#30363d] rounded-xl p-3 text-sm text-[#e6edf3] focus:border-[#58a6ff] outline-none transition-colors resize-none"
+                 />
+                 <Button 
+                   onClick={handleAnalyze} 
+                   disabled={isAnalyzing || !jd.trim()}
+                   className="w-full md:w-auto px-8"
+                 >
+                   {isAnalyzing ? 'Analyzing...' : 'Analyze Match'}
+                 </Button>
+               </div>
+
+               {matchResult && (
+                 <div className="pt-6 border-t border-[#30363d] grid grid-cols-1 lg:grid-cols-3 gap-8">
+                   <div className="flex flex-col items-center justify-center space-y-4">
+                     <div className="relative w-24 h-24 flex items-center justify-center">
+                       <svg className="absolute w-full h-full transform -rotate-90">
+                         <circle 
+                           cx="48" cy="48" r="40" 
+                           stroke="#30363d" strokeWidth="8" 
+                           fill="transparent" 
+                         />
+                         <circle 
+                           cx="48" cy="48" r="40" 
+                           stroke="#3fb950" strokeWidth="8" 
+                           fill="transparent" 
+                           strokeDasharray={251.2} 
+                           strokeDashoffset={251.2 - (251.2 * (matchResult.score || 0)) / 100} 
+                           strokeLinecap="round"
+                           className="transition-all duration-1000"
+                         />
+                       </svg>
+                       <div className="relative font-bold text-xl">
+                         {matchResult.score || 0}%
+                       </div>
+                     </div>
+                     <div className="text-center">
+                       <div className="text-xs text-[#8b949e] uppercase tracking-wider font-semibold">Match Score</div>
+                       <div className="text-sm font-bold text-[#3fb950]">
+                         {matchResult.score > 80 ? 'Strong Match' : matchResult.score > 50 ? 'Good Match' : 'Needs Improvement'}
+                       </div>
+                     </div>
+                   </div>
+
+                   <div className="lg:col-span-2 space-y-6">
+                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                       <div className="space-y-3">
+                         <h4 className="text-sm font-bold flex items-center gap-2 text-[#3fb950]">
+                           <CheckCircle2 size={16} /> Strong Matches
+                         </h4>
+                         <ul className="space-y-2">
+                           {matchResult.matches?.map((match, i) => (
+                             <li key={i} className="text-xs text-[#8b949e] flex gap-2">
+                               <span className="text-[#3fb950]">•</span> {match}
+                             </li>
+                           ))}
+                         </ul>
+                       </div>
+                       <div className="space-y-3">
+                         <h4 className="text-sm font-bold flex items-center gap-2 text-red-400">
+                           <XCircle size={16} /> Gaps
+                         </h4>
+                         <ul className="space-y-2">
+                           {matchResult.gaps?.map((gap, i) => (
+                             <li key={i} className="text-xs text-[#8b949e] flex gap-2">
+                               <span className="text-red-400">•</span> {gap}
+                             </li>
+                           ))}
+                         </ul>
+                       </div>
+                     </div>
+                     <div className="space-y-3">
+                       <h4 className="text-sm font-bold flex items-center gap-2 text-[#58a6ff]">
+                         <Zap size={16} /> Recommendations
+                       </h4>
+                       <ul className="space-y-2">
+                         {matchResult.recommendations?.map((rec, i) => (
+                           <li key={i} className="text-xs text-[#8b949e] flex gap-2">
+                             <span className="text-[#58a6ff]">•</span> {rec}
+                           </li>
+                         ))}
+                       </ul>
+                     </div>
+                     <div className="text-center text-[10px] text-[#4a4a4a] italic pt-4">
+                       Powered by Claude (Premium)
+                     </div>
+                   </div>
+                 </div>
+               )}
+             </Card>
+           </PremiumGate>
+         </section>
+
          {/* Code Hygiene & Open Source */}
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
@@ -488,10 +730,10 @@ const Dashboard = () => {
               <h2 className="text-xl font-bold flex items-center gap-2">
                 <CheckCircle2 size={20} /> Code Hygiene
               </h2>
-              <PremiumGate 
-                feature="Advanced Analytics" 
-                fallback={<LockedFeature featureName="Advanced Analytics" />}
-              >
+               <PremiumGate 
+                 feature="Advanced Analytics" 
+                 fallback={<CompactPremiumLock featureName="Advanced Analytics" description="Get deep insights into your code hygiene" onUnlock={openUpgradeModal} />}
+               >
                 <Card padding="p-6" className="space-y-6">
                   <div className="flex items-center justify-between p-4 bg-[#0d1117] rounded-xl border border-[#30363d]">
                     <div>
@@ -563,7 +805,36 @@ const Dashboard = () => {
             </section>
         </div>
 
-        {/* Premium Banner */}
+         {/* Premium Features Grid */}
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+           <PremiumGate 
+             feature="PDF Export" 
+             fallback={<CompactPremiumLock featureName="PDF Export" description="Export your portfolio to a high-quality PDF" onUnlock={openUpgradeModal} />}
+           >
+             <Card padding="p-6" className="flex flex-col items-center justify-center text-center space-y-4 h-full">
+               <div className="p-3 bg-blue-900/20 rounded-full text-[#58a6ff]"><FileDown size={24} /></div>
+               <div>
+                 <div className="font-bold text-lg">PDF Export</div>
+                 <div className="text-sm text-[#8b949e]">Download your professional portfolio</div>
+               </div>
+               <Button 
+                 variant="secondary" 
+                 onClick={() => exportPortfolioPDF(user?.login, profile, analytics?.langScores, displayProjects, analytics?.overall, 'minimal')} 
+                 className="w-full md:w-auto"
+               >
+                 Export PDF
+               </Button>
+             </Card>
+           </PremiumGate>
+           <PremiumGate 
+             feature="placement_card" 
+             fallback={<CompactPremiumLock featureName="Placement Card" description="Get a professional summary for recruiters" onUnlock={openUpgradeModal} />}
+           >
+             <PlacementCard profile={profile} topProjects={displayProjects} languageScores={analytics?.langScores} />
+           </PremiumGate>
+         </div>
+
+         {/* Premium Banner */}
         {!isPremium && (
           <section className="bg-gradient-to-r from-[#161b22] to-[#0d1117] border border-[#3fb950]/30 p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="space-y-2 text-center md:text-left">
@@ -576,6 +847,23 @@ const Dashboard = () => {
           </section>
         )}
       </div>
+       {toast && (
+        <div style={{ 
+          position: 'fixed', 
+          bottom: '20px', 
+          left: '50%', 
+          transform: 'translateX(-50%)', 
+          backgroundColor: '#3fb950', 
+          color: 'white', 
+          padding: '8px 16px', 
+          borderRadius: '20px', 
+          fontSize: '14px', 
+          zIndex: 100,
+          boxShadow: '0 4px 12px rgba(0,0,0,0.5)' 
+        }}>
+          {toast}
+        </div>
+      )}
        {improvingRepo && (
          <RepoImprover 
            repo={improvingRepo} 

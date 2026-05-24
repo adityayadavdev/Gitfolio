@@ -30,7 +30,7 @@ const PROMPTS = {
 
 async function callGemini(prompt, env) {
   try {
-    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${env.GOOGLE_API_KEY}`, {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${env.GOOGLE_API_KEY}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -46,7 +46,7 @@ async function callGemini(prompt, env) {
     if (res.ok) {
       const data = await res.json();
       if (data.candidates && data.candidates[0]?.content?.parts?.[0]?.text) {
-          return { content: data.candidates[0].content.parts[0].text, modelUsed: 'gemini-1.5-flash-latest' };
+           return { content: data.candidates[0].content.parts[0].text, modelUsed: 'gemini-1.5-flash' };
       }
     }
     console.error(`Gemini failed with status ${res.status}`);
@@ -88,10 +88,7 @@ async function callClaude(prompt, env, models) {
       console.error(`Model ${model} error: ${e.message}`);
     }
   }
-  return {
-    content: "This is a simulated AI response for testing purposes. In production, this would be a high-quality suggestion from Claude.",
-    modelUsed: 'fallback'
-  };
+  return null;
 }
 
 export async function aiHandler(request, env) {
@@ -146,13 +143,16 @@ export async function aiHandler(request, env) {
     const systemPrompt = promptCfg.system;
     const userPrompt = promptCfg.user(payload);
 
-    let aiResponse = await callGemini({ system: systemPrompt, user: userPrompt }, env);
-    
+    let aiResponse = await callClaude({ system: systemPrompt, user: userPrompt }, env, modelList);
+
     if (!aiResponse) {
-      // Fallback to OpenRouter/Claude
-      aiResponse = await callClaude({ system: systemPrompt, user: userPrompt }, env, modelList);
+      aiResponse = await callGemini({ system: systemPrompt, user: userPrompt }, env);
     }
-    
+
+    if (!aiResponse) {
+      return new Response(JSON.stringify({ error: 'AI services are temporarily unavailable' }), { status: 500, headers: { ...CORS_HEADERS, 'Content-Type': 'application/json' } });
+    }
+
     const { content, modelUsed } = aiResponse;
 
     return new Response(JSON.stringify({ result: content, model: modelUsed, isPremium }), {

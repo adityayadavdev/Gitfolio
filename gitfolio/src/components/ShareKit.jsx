@@ -1,15 +1,17 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { useGitHubData } from '../hooks/useGitHubData';
 import { generateSkillBadge } from '../services/badgeGenerator';
 import { Card } from './ui/Card';
 import { Button } from './ui/Button';
 import { Badge } from './ui/Badge';
-import { Copy, Share2, ExternalLink } from 'lucide-react';
+import { Copy, Share2, ExternalLink, Check } from 'lucide-react';
 
 const ShareKit = () => {
   const { user, token } = useAuth();
   const { languages } = useGitHubData({ username: user?.login, token });
+  const [copiedKey, setCopiedKey] = useState(null);
+  const [openBtnHover, setOpenBtnHover] = useState(false);
 
   const username = user?.login;
   const portfolioUrl = `https://gitfolio.harmnix.com/u/${username}`;
@@ -32,22 +34,27 @@ const ShareKit = () => {
       .map(([lang]) => lang);
   }, [languages]);
 
-  const copyToClipboard = async (text) => {
+  const handleCopy = async (text, key) => {
     try {
       await navigator.clipboard.writeText(text);
-    } catch (err) {
-      console.error('Failed to copy: ', err);
+      setCopiedKey(key);
+      setTimeout(() => setCopiedKey(null), 2000);
+    } catch {
+      const el = document.createElement('textarea');
+      el.value = text;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+      setCopiedKey(key);
+      setTimeout(() => setCopiedKey(null), 2000);
     }
   };
 
-  const handleLinkedInShare = () => {
-    const text = `Check out my curated GitHub portfolio on Gitfolio! 🚀\n\n${portfolioUrl}`;
-    copyToClipboard(text);
-  };
-
   const handleWhatsAppShare = () => {
-    const text = encodeURIComponent(`Check out my curated GitHub portfolio on Gitfolio! 🚀\n${portfolioUrl}`);
-    window.open(`whatsapp://send?text=${text}`, '_blank');
+    const shareText = `Check out my curated GitHub portfolio on Gitfolio! 🚀\n${portfolioUrl}`;
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   if (!username) return null;
@@ -64,12 +71,36 @@ const ShareKit = () => {
         <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider flex items-center gap-2">
           <ExternalLink size={14} /> Portfolio Link
         </h3>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center" style={{ gap: '8px' }}>
           <div className="flex-1 bg-[#0d1117] border border-[#30363d] rounded-md px-4 py-2 text-sm text-gray-300 font-mono truncate">
             {portfolioUrl}
           </div>
-          <Button variant="secondary" onClick={() => copyToClipboard(portfolioUrl)}>
-            <Copy size={16} className="inline mr-2" /> Copy
+          <button
+            onClick={() => window.open(`/u/${username}`, '_blank')}
+            onMouseEnter={() => setOpenBtnHover(true)}
+            onMouseLeave={() => setOpenBtnHover(false)}
+            style={{
+              background: openBtnHover ? '#1c2a3a' : 'transparent',
+              color: '#58a6ff',
+              border: '0.5px solid #30363d',
+              borderRadius: '6px',
+              padding: '8px 14px',
+              fontSize: '13px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              flexShrink: 0,
+            }}
+          >
+            <ExternalLink size={13} /> Open
+          </button>
+          <Button variant="secondary" onClick={() => handleCopy(portfolioUrl, 'portfolio')} style={{ flexShrink: 0 }}>
+            {copiedKey === 'portfolio' ? (
+              <><Check size={16} className="inline mr-2" style={{ color: '#3fb950' }} /> <span style={{ color: '#3fb950' }}>Copied!</span></>
+            ) : (
+              <><Copy size={16} className="inline mr-2" /> Copy</>
+            )}
           </Button>
         </div>
         <div className="flex justify-center p-4 bg-white rounded-xl w-fit mx-auto">
@@ -101,9 +132,13 @@ const ShareKit = () => {
                 <Button 
                   variant="outline" 
                   className="text-xs py-1" 
-                  onClick={() => copyToClipboard(markdown)}
+                  onClick={() => handleCopy(markdown, 'badge_' + skill)}
                 >
-                  <Copy size={14} className="inline mr-1" /> Copy Markdown
+                  {copiedKey === 'badge_' + skill ? (
+                    <><Check size={14} className="inline mr-1" style={{ color: '#3fb950' }} /> <span style={{ color: '#3fb950' }}>Copied!</span></>
+                  ) : (
+                    <><Copy size={14} className="inline mr-1" /> Copy Markdown</>
+                  )}
                 </Button>
               </div>
             );
@@ -120,8 +155,12 @@ const ShareKit = () => {
           <Share2 size={14} /> Social Share
         </h3>
         <div className="flex flex-wrap gap-3">
-          <Button variant="secondary" onClick={handleLinkedInShare}>
-            <Copy size={16} className="inline mr-2" /> Copy for LinkedIn
+          <Button variant="secondary" onClick={() => handleCopy(`Check out my curated GitHub portfolio on Gitfolio! 🚀\n\n${portfolioUrl}`, 'linkedin')}>
+            {copiedKey === 'linkedin' ? (
+              <><Check size={16} className="inline mr-2" style={{ color: '#3fb950' }} /> <span style={{ color: '#3fb950' }}>Copied!</span></>
+            ) : (
+              <><Copy size={16} className="inline mr-2" /> Copy for LinkedIn</>
+            )}
           </Button>
           <Button variant="secondary" onClick={handleWhatsAppShare}>
             <Share2 size={16} className="inline mr-2" /> Share on WhatsApp
