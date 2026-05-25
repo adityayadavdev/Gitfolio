@@ -1,14 +1,15 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
-import { Filter, BarChart, Share2, Copy, X, Loader2 } from 'lucide-react';
+import { Filter, BarChart, Share2, Copy, X, Loader2, GitBranch, Check } from 'lucide-react';
 
 const Landing = () => {
   const { startAuth, isAuthenticated } = useAuth();
   const navigate = useNavigate();
   const [authData, setAuthData] = useState(null);
   const [timeLeft, setTimeLeft] = useState(0);
-  const [copied, setCopied] = useState(false);
+  const [primaryCopied, setPrimaryCopied] = useState(false);
+  const [secondaryCopied, setSecondaryCopied] = useState(false);
   const abortControllerRef = useRef(null);
 
   useEffect(() => {
@@ -46,11 +47,18 @@ const Landing = () => {
     setTimeLeft(0);
   };
 
-  const copyLink = async () => {
+  const handleOpenVerify = async () => {
+    window.open(authData.verification_uri, '_blank');
+    await navigator.clipboard.writeText(authData.user_code);
+    setPrimaryCopied(true);
+    setTimeout(() => setPrimaryCopied(false), 3000);
+  };
+
+  const handleCopyLink = async () => {
     if (!authData) return;
     await navigator.clipboard.writeText(authData.verification_uri);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    setSecondaryCopied(true);
+    setTimeout(() => setSecondaryCopied(false), 2000);
   };
 
   const formatTime = (seconds) => {
@@ -112,45 +120,107 @@ const Landing = () => {
       {/* Auth Modal */}
       {authData && (
         <div id="auth-modal" role="dialog" aria-modal="true" className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm">
-          <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 relative animate-in fade-in zoom-in duration-200">
+          <div 
+            className="bg-white rounded-3xl shadow-2xl relative animate-in fade-in zoom-in duration-200" 
+            style={{ maxWidth: '420px', width: '100%', padding: '32px 28px' }}
+          >
             <button 
               onClick={handleCloseModal}
-              className="absolute top-6 right-6 text-slate-400 hover:text-slate-600 transition-colors"
+              className="absolute top-6 right-6 p-2 rounded-lg transition-colors"
+              style={{ backgroundColor: 'transparent', color: '#656d76' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#f6f8fa'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
             >
-              <X size={24} />
+              <X size={20} />
             </button>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Loader2 size={32} className="animate-spin" />
-              </div>
-              <h2 className="text-2xl font-bold mb-2">Connect GitHub</h2>
-              <p className="text-slate-600 mb-8">Authorize Gitfolio to analyze your repositories</p>
+              <h2 className="text-2xl font-bold mb-6 text-[#1a1a2e]">Connect GitHub</h2>
 
-              <div className="bg-slate-50 rounded-2xl p-6 mb-8 border border-slate-100">
-                <p className="text-sm text-slate-500 mb-2 uppercase tracking-wider font-semibold">Your User Code</p>
-                <div className="text-3xl font-mono font-bold text-slate-900 mb-6 tracking-widest">
+              <div 
+                className="rounded-lg border mb-4" 
+                style={{ backgroundColor: '#f6f8fa', borderColor: '#d0d7de', padding: '20px', marginBottom: '16px' }}
+              >
+                <p 
+                  className="mb-2 uppercase" 
+                  style={{ fontSize: '11px', color: '#656d76', letterSpacing: '0.08em', fontWeight: '600' }}
+                >
+                  Your User Code
+                </p>
+                <div 
+                  className="font-mono select-all" 
+                  style={{ fontSize: '28px', fontWeight: '700', color: '#1a1a2e', letterSpacing: '0.15em' }}
+                >
                   {authData.user_code}
                 </div>
+              </div>
+
+              <div className="flex flex-col gap-2.5 mb-6">
                 <button 
-                  onClick={copyLink}
-                  className="w-full flex items-center justify-center gap-2 bg-white border border-slate-200 hover:border-blue-300 hover:text-blue-600 px-4 py-3 rounded-xl font-medium transition-all shadow-sm"
+                  onClick={handleOpenVerify}
+                  className="flex items-center justify-center gap-2 transition-all"
+                  style={{ 
+                    backgroundColor: primaryCopied ? '#1a7f37' : '#238636', 
+                    color: '#ffffff', 
+                    borderRadius: '8px', 
+                    padding: '12px 20px',
+                    fontWeight: '600',
+                    fontSize: '15px'
+                  }}
+                  onMouseEnter={(e) => !primaryCopied && (e.currentTarget.style.backgroundColor = '#2ea043')}
+                  onMouseLeave={(e) => !primaryCopied && (e.currentTarget.style.backgroundColor = '#238636')}
+                  onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.99)'}
+                  onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
                 >
-                  {copied ? 'Copied!' : (
+                  {!primaryCopied && <GitBranch size={18} />}
+                  {primaryCopied ? 'Code copied — paste it on GitHub ✓' : 'Open GitHub to verify'}
+                </button>
+
+                <button 
+                  onClick={handleCopyLink}
+                  className="flex items-center justify-center gap-2 transition-all"
+                  style={{ 
+                    backgroundColor: '#ffffff', 
+                    color: '#24292f', 
+                    border: '1px solid #d0d7de', 
+                    borderRadius: '8px', 
+                    padding: '11px 20px',
+                    fontWeight: '500',
+                    fontSize: '14px'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#f6f8fa';
+                    e.currentTarget.style.borderColor = '#8c959f';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#ffffff';
+                    e.currentTarget.style.borderColor = '#d0d7de';
+                  }}
+                >
+                  {secondaryCopied ? (
                     <>
-                      <Copy size={18} />
-                      Copy Verification Link
+                      <Check size={15} style={{ color: '#238636' }} />
+                      <span>Link copied!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy size={15} style={{ color: '#656d76' }} />
+                      <span>Copy verification link</span>
                     </>
                   )}
                 </button>
               </div>
 
-              <div className="flex items-center justify-center gap-3 text-slate-500 mb-4">
-                <Loader2 size={16} className="animate-spin" />
+              <div className="flex items-center justify-center gap-2 mb-4" style={{ color: '#656d76' }}>
+                <Loader2 size={16} className="animate-spin text-blue-500" />
                 <span className="text-sm font-medium">Waiting for authorization...</span>
               </div>
-              <p className="text-xs text-slate-400">
-                Code expires in <span className="font-semibold text-slate-600">{formatTime(timeLeft)}</span>
+              
+              <p 
+                className="text-xs" 
+                style={{ color: timeLeft < 120 ? '#cf222e' : '#8c959f' }}
+              >
+                Code expires in <span className="font-semibold">{formatTime(timeLeft)}</span>
               </p>
             </div>
           </div>

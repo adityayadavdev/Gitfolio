@@ -1,8 +1,0 @@
-[     168ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflare.com/beacon.min.js:0
-[     357ms] [WARNING] Error while trying to use the following icon from the Manifest: http://localhost:4173/pwa-192x192.png (Download error or resource isn't a valid image) @ http://localhost:4173/:0
-[   66686ms] [ERROR] Access to fetch at 'https://gitfolio-workers.gitfolio-api.workers.dev/auth/device' from origin 'http://localhost:4173' has been blocked by CORS policy: The 'Access-Control-Allow-Origin' header has a value 'https://gitfolio.harmnix.com' that is not equal to the supplied origin. Have the server send the header with a valid value. @ http://localhost:4173/:0
-[   66688ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://gitfolio-workers.gitfolio-api.workers.dev/auth/device:0
-[   66688ms] [ERROR] Failed to start auth: Error: GitHub auth unavailable
-    at Cp (http://localhost:4173/assets/index-BoAJxrBW.js:20:30380)
-    at async u (http://localhost:4173/assets/index-BoAJxrBW.js:20:32646)
-    at async onClick (http://localhost:4173/assets/Landing-SJNlv5xw.js:1:1550) @ http://localhost:4173/assets/Landing-SJNlv5xw.js:0
