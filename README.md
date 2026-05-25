@@ -1,152 +1,90 @@
 # <img src="https://gitfolio.harmnix.com/og-default.png" width="100%" alt="Gitfolio Banner">
 
-# 🚀 Gitfolio
-**Transform your GitHub into a placement-ready portfolio.**
+# 🚀 Gitfolio: The Professional Bridge from Code to Career
 
+**Transform your raw GitHub activity into a quantified, recruiter-ready professional presence.**
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Explore_Gitfolio-blue?style=for-the-badge&logo=googlechrome)](https://gitfolio.harmnix.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![React](https://img.shields.io/badge/React-19-blue)](https://react.dev/)
-[![Cloudflare Workers](https://img.shields.io/badge/Backend-Cloudflare%20Workers-f38020)](https://workers.cloudflare.com/)
+[![React 19](https://img.shields.io/badge/Frontend-React_19-61dafb?style=flat-square&logo=react)](https://react.dev/)
+[![Cloudflare](https://img.shields.io/badge/Backend-Cloudflare_Workers-f38020?style=flat-square&logo=cloudflare)](https://workers.cloudflare.com/)
 
-Gitfolio is a high-impact portfolio generator designed specifically for developers to bridge the gap between a raw GitHub profile and a professional, recruiter-ready portfolio. Targeting the competitive placement landscape (especially in India), Gitfolio analyzes your contributions, quantifies your skill depth, and generates a polished, shareable presence that highlights your best work.
+## 🎯 The Problem & The Solution
 
----
+**The Problem**
+Recruiters and hiring managers often spend less than 30 seconds scanning a GitHub profile. Raw commit history, \"green squares,\" and fragmented repositories fail to communicate the actual engineering depth, architectural decision-making, or the real-world impact of a developer's work.
 
-## ✨ Why Gitfolio?
-
-Most developers have great code on GitHub, but recruiters often lack the time to dig through repositories. Gitfolio does the heavy lifting for you:
-- **Quantified Readiness**: Moves beyond "green squares" to provide an *Interview Readiness Score*.
-- **AI-Driven Polish**: Uses LLMs to turn technical commit messages into compelling project descriptions.
-- **Recruiter-Centric**: Generates concise "Placement Cards" and SEO-optimized public pages.
-- **Job-Fit Analysis**: Directly matches your profile against real-world LinkedIn job descriptions.
+**The Solution**
+Gitfolio acts as a high-performance interpretation layer. It analyzes raw GitHub data to quantify skill depth, uses state-of-the-art AI to narrate technical contributions, and presents a curated, professional identity that speaks the language of recruiters.
 
 ---
 
-## 🛠️ Key Features
+## ✨ Core Capabilities
 
-- 🔐 **Secure GitHub Integration**: Seamless authentication via GitHub Device Flow.
-- 📊 **Developer Analytics**: Deep-dive language proficiency, activity heatmaps, and skill-gap analysis.
-- 🤖 **AI Enhancements**: Automated project storytelling using Claude and Llama.
-- 📄 **PDF Export**: Professional, high-quality PDF portfolio for offline submissions.
-- 🪪 **Placement Card**: A "digital business card" containing your top stats and links.
-- 🌐 **Public Profiles**: Stunning, SEO-friendly portfolio pages with custom OG tags for social sharing.
+### 📊 Quantified Engineering Readiness
+Moves beyond vanity metrics. Gitfolio provides an **Interview Readiness Score** by analyzing contribution quality, consistency, and language proficiency, giving developers a concrete benchmark of their marketability.
 
----
+### 🤖 AI-Powered Technical Narrative
+Leverages a multi-model AI orchestration (Claude & Llama) to transform cryptic commit messages into compelling project storytelling. It highlights the *how* and *why* behind the code, not just the *what*.
 
-## 💎 Feature Matrix
+### 🌐 Edge-First Architecture
+Built for global scale. By utilizing **Cloudflare Workers** and **KV Storage**, the platform ensures near-zero latency for portfolio visitors worldwide, removing traditional database bottlenecks.
 
-| Feature | Free | Premium |
-| :--- | :---: | :---: |
-| GitHub Profile Analysis | ✅ | ✅ |
-| Readiness Score | ✅ | ✅ |
-| Public Portfolio Page | ✅ | ✅ |
-| AI Description Enhancements | Limited | Unlimited |
-| Job Match Analyzer | ❌ | ✅ |
-| High-Res PDF Export | ❌ | ✅ |
-| Priority Support | ❌ | ✅ |
+### 🪪 Recruiter-Centric Artifacts
+- **Public Profiles**: SEO-optimized, high-conversion portfolio pages.
+- **Placement Cards**: Digital business cards highlighting top stats and technical wins.
+- **PDF Exports**: Professional, high-fidelity documents for offline application submissions.
 
 ---
 
-## 🏗️ Technical Architecture
+## 🏗️ Technical Deep Dive
 
-Gitfolio leverages a modern, serverless architecture for maximum scalability and speed:
+Gitfolio is engineered for maximum performance and scalability, utilizing a modern serverless stack.
 
-`Client (React 19)` $\rightarrow$ `Edge Computing (Cloudflare Workers)` $\rightarrow$ `Data (KV Storage)` $\rightarrow$ `External APIs (GitHub GraphQL/REST)`
+### The Architecture
+`React 19 Frontend` $\rightarrow$ `Cloudflare Workers (Edge Runtime)` $\rightarrow$ `KV Storage (Global Cache)` $\rightarrow$ `GitHub GraphQL API`
 
-- **Frontend**: Built with Vite and React 19 for a lightning-fast UI, using Framer Motion for professional animations.
-- **Backend**: Cloudflare Workers handle the business logic and API proxying, ensuring low-latency responses globally.
-- **Storage**: Cloudflare KV for caching profile data and storing user preferences.
-- **Intelligence**: Multi-model AI orchestration via Anthropic (Claude) and Llama.
+### Engineering Highlights
+- **Zero-Cold-Start Backend**: By deploying logic to the Edge via Cloudflare Workers, the API response time is minimized regardless of the user's location.
+- **Efficient Data Fetching**: Implements GitHub's GraphQL API to fetch deeply nested contribution data in a single request, drastically reducing network overhead.
+- **Modern UI/UX**: Built with **React 19** and **Framer Motion**, providing a fluid, app-like experience with professional animations.
+- **AI Orchestration**: Implements a tiered fallback mechanism for LLMs to ensure 100% availability of AI-generated descriptions.
 
 ---
 
 ## 💻 Tech Stack
 
-- **Frontend**: React 19, Vite, Tailwind CSS, Framer Motion, Lucide React, Dexie.js
-- **Backend**: Cloudflare Workers (Serverless), KV Storage
-- **AI/ML**: Anthropic Claude, Llama (via Cloudflare AI/OpenRouter)
-- **Payments**: Razorpay
-- **APIs**: GitHub GraphQL & REST APIs
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React 19, Vite, Tailwind CSS, Framer Motion, Lucide React |
+| **Backend** | Cloudflare Workers (Serverless), KV Storage |
+| **Intelligence** | Anthropic Claude, Llama (via OpenRouter/Cloudflare AI) |
+| **APIs & Payments** | GitHub GraphQL/REST API, Razorpay |
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js (v18+)
-- npm or pnpm
-- A GitHub OAuth App (for Client ID/Secret)
-- A Cloudflare account
-
 ### Local Installation
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/gitfolio.git
-   cd gitfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Setup Environment Variables**
-   Create a `.env` file in the root directory:
-   ```env
-   VITE_GITHUB_CLIENT_ID=your_github_client_id
-   VITE_WORKER_URL=https://your-worker.your-subdomain.workers.dev
-   VITE_RAZORPAY_KEY_ID=your_razorpay_key
-   ```
-
-4. **Run development server**
-   ```bash
-   npm run dev
-   ```
-
----
-
-## 🌐 Deployment
-
-### Frontend
-The frontend can be deployed to any static hosting provider (Vercel, Netlify, Cloudflare Pages):
 ```bash
-npm run build
-# Deploy the 'dist' folder
+git clone https://github.com/adityayadavdev/Gitfolio.git
+cd Gitfolio/gitfolio
+npm install
+npm run dev
 ```
 
-### Backend (Cloudflare Workers)
-1. Install Wrangler CLI: `npm install -g wrangler`
-2. Authenticate: `wrangler login`
-3. Deploy: `wrangler deploy`
-
----
-
-## 🔑 Environment Variables
-
-| Variable | Description | Required |
-| :--- | :--- | :---: |
-| `VITE_GITHUB_CLIENT_ID` | GitHub OAuth Application Client ID | Yes |
-| `VITE_WORKER_URL` | URL of the deployed Cloudflare Worker | Yes |
-| `VITE_RAZORPAY_KEY_ID` | Razorpay API Key for payments | Yes |
-| `GITHUB_TOKEN` | Secret token for worker-side API calls | Yes |
-| `AI_API_KEY` | API Key for Claude/OpenRouter | Yes |
-| `KV_NAMESPACE` | Cloudflare KV namespace ID | Yes |
+### Environment Configuration
+Create a `.env` file in the `gitfolio` directory:
+```env
+VITE_GITHUB_CLIENT_ID=your_github_client_id
+VITE_WORKER_URL=https://your-worker.workers.dev
+VITE_RAZORPAY_KEY_ID=your_razorpay_key
+```
 
 ---
 
 ## 🤝 Contributing
-
-We welcome contributions to make Gitfolio better! 
-
-1. **Fork** the repository.
-2. **Create a feature branch**: `git checkout -b feature/AmazingFeature`.
-3. **Commit your changes**: `git commit -m 'Add some AmazingFeature'`.
-4. **Push to the branch**: `git push origin feature/AmazingFeature`.
-5. **Open a Pull Request**.
-
-Please ensure your code follows the existing style guide and includes tests for new functionality.
-
----
+Contributions are welcome! Please fork the repository and submit a pull request for any feature enhancements or bug fixes.
 
 ## 📜 License
-
 Distributed under the MIT License. See `LICENSE` for more information.
